@@ -24,16 +24,34 @@ We have significantly upgraded the core engine to handle modern web architecture
 
 1.  **Clone & Install:**
     ```bash
-    git clone https://github.com/feder-cr/Auto_Jobs_Applier_AIHawk.git
+    git clone https://github.com/peerreview-cyber/Auto_Jobs_Applier_AIHawk.git
     cd Auto_Jobs_Applier_AIHawk
     pip install -r requirements.txt
     ```
-2.  **Configure:** 
-    - Copy the example data folder: `cp -r data_folder_example data_folder`
-    - Add your API keys to `data_folder/secrets.yaml`.
-    - Set your job search preferences in `data_folder/config.yaml`.
-    - Update your personal details in `data_folder/plain_text_resume.yaml`.
-3.  **Run:**
+
+2.  **Initialize Data Folder:**
+    ```bash
+    cp -r data_folder_example data_folder
+    ```
+
+3.  **Configure Credentials:**
+    - Get a free API Key from [Google AI Studio](https://aistudio.google.com/).
+    - Open `data_folder/secrets.yaml` and set your key:
+      ```yaml
+      llm_api_key: "YOUR_GEMINI_API_KEY"
+      ```
+
+4.  **Set AI Model & Preferences:**
+    - Open `data_folder/config.yaml`.
+    - Set the model to Gemini:
+      ```yaml
+      llm_model_type: "gemini"
+      llm_model: "gemini-2.0-flash"
+      ```
+    - Update your job search criteria (locations, positions, etc.) in the same file.
+    - Fill in your professional details in `data_folder/plain_text_resume.yaml`.
+
+5.  **Run:**
     ```bash
     python3 main.py
     ```
