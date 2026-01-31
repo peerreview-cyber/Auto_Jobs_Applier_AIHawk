@@ -4,6 +4,9 @@
 
 # AIHawk: The first Jobs Applier AI Web Agent
 
+> ℹ️ **Note:** This is an enhanced fork of the original [AIHawk by feder-cr](https://github.com/feder-cr/Jobs_Applier_AI_Agent_AIHawk). 
+> We have added anti-bot evasion, Gemini support, and stability patches to keep it working in 2026.
+
 AIHawk's core architecture remains **open source**, allowing developers to inspect and extend the codebase. However, due to copyright considerations, we have removed all third‑party provider plugins from this repository.
 
 ### 🚀 Advanced Automation Features (January 2026)
